@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adjust Commission - Admin</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="admin_affiliates.html">Affiliates</a></li>
+      <li><a href="admin_commissions.html">Commissions</a></li>
+      <li><a href="admin_adjust_commission.html" class="active">Adjust</a></li>
+      <li><a href="admin_payouts.html">Payouts</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Manual Commission Adjustment</h1>
+
+    <form action="#" method="POST">
+      <label for="affiliate_id">Affiliate ID</label>
+      <input type="text" id="affiliate_id" name="affiliate_id" required>
+
+      <label for="adjust_type">Adjustment Type</label>
+      <select id="adjust_type" name="adjust_type">
+        <option value="add">Add Commission</option>
+        <option value="deduct">Deduct Commission</option>
+      </select>
+
+      <label for="amount">Amount (₹)</label>
+      <input type="number" id="amount" name="amount" required>
+
+      <label for="reason">Reason</label>
+      <textarea id="reason" name="reason" rows="3" required></textarea>
+
+      <button type="submit">Submit Adjustment</button>
+    </form>
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2025 Affiliate Admin Panel. All rights reserved.</p>
+  </footer>
+</body>
+</html>

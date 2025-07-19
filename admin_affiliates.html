@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Affiliate Management - Admin</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="admin_affiliates.html" class="active">Affiliates</a></li>
+      <li><a href="admin_commissions.html">Commissions</a></li>
+      <li><a href="admin_adjust_commission.html">Adjust</a></li>
+      <li><a href="admin_payouts.html">Payouts</a></li>
+    </ul>
+  </nav>
+
+  <div class="history-container">
+    <h1>Affiliate Management</h1>
+    <table class="commission-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>#101</td>
+          <td>Ravi Kumar</td>
+          <td>ravi@email.com</td>
+          <td class="paid">Active</td>
+          <td>
+            <button>Block</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>#102</td>
+          <td>Meena Patel</td>
+          <td>meena@email.com</td>
+          <td class="pending">Pending</td>
+          <td>
+            <button>Approve</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2025 Affiliate Admin Panel. All rights reserved.</p>
+  </footer>
+</body>
+</html>

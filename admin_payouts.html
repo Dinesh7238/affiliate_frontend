@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payout Approvals - Admin</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="admin_affiliates.html">Affiliates</a></li>
+      <li><a href="admin_commissions.html">Commissions</a></li>
+      <li><a href="admin_adjust_commission.html">Adjust</a></li>
+      <li><a href="admin_payouts.html" class="active">Payouts</a></li>
+    </ul>
+  </nav>
+
+  <div class="history-container">
+    <h1>Payout Requests</h1>
+    <table class="commission-table">
+      <thead>
+        <tr>
+          <th>Request ID</th>
+          <th>Affiliate</th>
+          <th>Amount</th>
+          <th>Date</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>#301</td>
+          <td>Ravi Kumar</td>
+          <td>₹1000</td>
+          <td>12-Jul-25</td>
+          <td class="pending">Pending</td>
+          <td>
+            <button>Approve</button>
+            <button>Reject</button>
+          </td>
+        </tr>
+        <tr>
+          <td>#302</td>
+          <td>Meena Patel</td>
+          <td>₹800</td>
+          <td>14-Jul-25</td>
+          <td class="paid">Paid</td>
+          <td>
+            <button disabled>Approved</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2025 Affiliate Admin Panel. All rights reserved.</p>
+  </footer>
+</body>
+</html>
